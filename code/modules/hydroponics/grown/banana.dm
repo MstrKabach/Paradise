@@ -25,7 +25,31 @@
 	bitesize = 5
 	distill_reagent = "bananahonk"
 	tastes = list("banana" = 1)
+	var/naklejka = FALSE
 
+/obj/item/banana_decal
+	name = "banana naklejka"
+	desc = "DESC"
+	icon = 'icons/obj/items.dmi'
+	icon_state = "banana_naklejka"
+
+/obj/item/reagent_containers/food/snacks/grown/banana/attackby(obj/item/N)
+	if(istype(N, /obj/item/banana_decal))
+		naklejka = TRUE
+		update_icon(UPDATE_OVERLAYS)
+
+/obj/item/reagent_containers/food/snacks/grown/banana/update_overlays()
+	. = ..()
+	if(naklejka)
+		. += image('icons/obj/items.dmi', "banana_na")
+	else
+		. -= image('icons/obj/items.dmi', "banana_na")
+
+/obj/item/reagent_containers/food/snacks/grown/banana/attack_self()
+	if(naklejka)
+		playsound(loc, 'sound/misc/slip.ogg', 50, 1, -1)
+		naklejka = FALSE
+		update_icon(UPDATE_OVERLAYS)
 
 /obj/item/reagent_containers/food/snacks/grown/banana/throw_impact(mob/living/simple_animal/hostile/gorilla/hit_gorilla, datum/thrownthing/throwingdatum)
 	if(istype(hit_gorilla))
