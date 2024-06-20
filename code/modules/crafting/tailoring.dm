@@ -49,6 +49,75 @@
 	time = 25
 	category = CAT_CLOTHING
 
+/datum/crafting_recipe/veil_botany
+	name = "Blooming Veil"
+	result = /obj/item/clothing/glasses/hud/hydroponic/tajblind
+	reqs = list(/obj/item/clothing/glasses/hud/hydroponic = 1,
+				/obj/item/clothing/glasses/tajblind = 1,
+				/obj/item/stack/cable_coil = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
+	time = 10
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/veil_industrial
+	name = "Industrial Veil"
+	result = /obj/item/clothing/glasses/tajblind/eng
+	reqs = list(/obj/item/clothing/glasses/welding = 1,
+				/obj/item/clothing/glasses/tajblind = 1,
+				/obj/item/stack/cable_coil = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
+	time = 10
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/veil_security
+	name = "Sleek Veil"
+	result = /obj/item/clothing/glasses/tajblind/eng
+	reqs = list(/obj/item/clothing/glasses/tajblind = 1,
+				/obj/item/clothing/glasses/hud/security = 1,
+				/obj/item/stack/cable_coil = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
+	time = 10
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/veil_medical
+	name = "Lightweight Veil"
+	result = /obj/item/clothing/glasses/tajblind/eng
+	reqs = list(/obj/item/clothing/glasses/hud = 1,
+				/obj/item/clothing/glasses/hud/health = 1,
+				/obj/item/stack/cable_coil = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
+	time = 10
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/veil_cargo
+	name = "Khaki Veil"
+	result = /obj/item/clothing/glasses/tajblind/eng
+	reqs = list(/obj/item/clothing/glasses/hud = 1,
+				/obj/item/clothing/glasses/meson = 1,
+				/obj/item/stack/cable_coil = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
+	time = 10
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/veil_diagnostic
+	name = "Diagnostic Veil"
+	result = /obj/item/clothing/glasses/hud/diagnostic/tajblind
+	reqs = list(/obj/item/clothing/glasses/hud = 1,
+				/obj/item/stack/cable_coil = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
+	time = 10
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/veil_skills
+	name = "Skills Veil"
+	result = /obj/item/clothing/glasses/hud/skills/tajblind
+	reqs = list(/obj/item/clothing/glasses/hud = 1,
+				/obj/item/clothing/glasses/hud/skills = 1,
+				/obj/item/stack/cable_coil = 5)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
+	time = 10
+	category = CAT_CLOTHING
+
 /datum/crafting_recipe/fannypack
 	name = "Fannypack"
 	result = /obj/item/storage/belt/fannypack
