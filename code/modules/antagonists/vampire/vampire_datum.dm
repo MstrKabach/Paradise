@@ -267,6 +267,7 @@
 			if(target.ckey || target.player_ghosted) //Requires ckey regardless if monkey or humanoid, or the body has been ghosted before it died
 				blood = min(20, target.blood_volume)
 				adjust_blood(target, blood * BLOOD_GAINED_MODIFIER)
+				class_unique()
 				to_chat(owner.current, span_boldnotice("You have accumulated [bloodtotal] unit\s of blood, and have [bloodusable] left to use."))
 
 		target.blood_volume = max(target.blood_volume - 25, 0)

@@ -160,3 +160,20 @@
 	dissect_cap = 6
 	crit_organ_cap = 6
 
+/datum/vampire_subclass/proc/class_unique()
+	switch(vampire_subclass)
+		if(SUBCLASS_HEMOMANCER)
+
+		if(SUBCLASS_UMBRAE)
+
+		if(SUBCLASS_BESTIA)
+
+		if(SUBCLASS_GARGANTUA)
+
+		if(SUBCLASS_DANTALION)
+
+		if(SUBCLASS_ANCIENT)
+
+
+
+
