@@ -33,6 +33,20 @@ export const ERTManager = (props, context) => {
                 onClick={() => act('ert_type', { ert_type: 'Gamma' })}
               />
             </LabeledList.Item>
+            <LabeledList.Item label="Prevent Announce">
+              <Button
+                key={'prevent_announce'}
+                selected={data.manual_check !== data.manual_check}
+                content={'Prevent announce?'}
+                tooltip={
+                  'Возможность отключить автоматическое оповещение о сборе и отправке отряда, \
+                  повышает шанс отсутствия ловушки у порта прибытия и подготовки к противостоянию с ОБР'
+                }
+                tooltipPosition="bottom"
+                onClick={() => act('prevent_announce')}
+                color={data.prevent_announce === 1 ? 'red' : ''}
+              />
+            </LabeledList.Item>
           </LabeledList>
         </Section>
         <Section title="Slots">
