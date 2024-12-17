@@ -1691,6 +1691,7 @@
 #include "code\modules\antagonists\traitor\datum_mindslave.dm"
 #include "code\modules\antagonists\traitor\datum_traitor.dm"
 #include "code\modules\antagonists\traitor\contractor\datums\contractor.dm"
+#include "code\modules\antagonists\traitor\contractor\datums\wandering_contractor.dm"
 #include "code\modules\antagonists\traitor\contractor\datums\contractor_hub.dm"
 #include "code\modules\antagonists\traitor\contractor\datums\contractor_hub_ui.dm"
 #include "code\modules\antagonists\traitor\contractor\datums\contractor_support.dm"
